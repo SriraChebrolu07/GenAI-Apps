@@ -31,7 +31,9 @@ from langchain.chains import ConversationChain
 import sqlalchemy
 load_dotenv()
 
-db_uri = os.getenv("MYSQL_URI", "mysql+pymysql://user:password@localhost:3306/database")
+db_uri = os.getenv("MYSQL_URI")
+if not db_uri:
+    raise RuntimeError("MYSQL_URI must be set in the local .env file")
 mydb = SQLDatabase.from_uri(db_uri)
 llm = ChatOpenAI(temperature=0, model="gpt-3.5-turbo", verbose=True)
 db_chain = SQLDatabaseChain.from_llm(llm, mydb, verbose=True)
