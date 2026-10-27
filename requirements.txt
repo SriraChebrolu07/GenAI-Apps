@@ -1,0 +1,44 @@
+# Shared baseline for the experiments in this repository.
+# Individual projects may require older, incompatible versions; see their
+# local requirements.txt files before running them.
+
+python-dotenv
+streamlit
+pandas
+requests
+beautifulsoup4
+PyPDF2
+PyMuPDF
+python-docx
+Pillow
+
+# LLM and orchestration frameworks
+openai
+google-generativeai
+langchain
+langchain-community
+langchain-core
+langchain-google-genai
+langchain-groq
+llama-index
+llama-parse
+crewai
+crewai-tools
+pyautogen
+
+# Retrieval and data access
+faiss-cpu
+chromadb
+fastembed
+sentence-transformers
+mysql-connector-python
+mysqlclient
+pyodbc
+SQLAlchemy
+
+# Utilities used by selected examples
+duckduckgo-search
+wikipedia
+textblob
+num2words
+boto3

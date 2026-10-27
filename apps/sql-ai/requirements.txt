@@ -1,0 +1,15 @@
+pyodbc
+pandas
+langchain 
+streamlit
+langchain-experimental
+huggingfacehub
+sqlparse
+sqlalchemy
+sql-connector-python
+openai
+faiss-cpu
+pymupdf
+pil
+fitz
+google-generativeai

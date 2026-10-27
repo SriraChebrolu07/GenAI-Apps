@@ -1,0 +1,23 @@
+unstructured
+langchain
+Jinja2>=3.1.2
+click>=7.0
+duckduckgo-search
+crewai
+crewai[tools]
+langchain_groq
+python-dotenv
+llama-index
+llama-index-core
+llama-index-embeddings-openai
+llama-index-postprocessor-flag-embedding-reranker
+#git+https://github.com/FlagOpen/FlagEmbedding.git
+llama-parse
+# llama-index-embeddings-fastembed
+fastembed
+llama-index-llms-groq
+llama-index-llms-langchain
+pypdf2
+llama-index-embeddings-ollama
+sentence_transformers
+llama-index-embeddings-langchain

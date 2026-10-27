@@ -1,0 +1,19 @@
+import streamlit as st
+
+# Import your AI model (replace with your LangChain model)
+# For this example, we'll use a placeholder function that generates random text
+def generate_text(prompt):
+    # Replace this with code to call your LangChain model
+    return f"Generated text for '{prompt}'"
+
+# Streamlit app
+st.title("LangChain AI Text Generation App")
+
+# Input for user to provide a text prompt
+user_input = st.text_input("Enter a text prompt", "Once upon a time,")
+
+# Generate and display text
+if st.button("Generate"):
+    generated_text = generate_text(user_input)
+    st.write("Generated Text:")
+    st.write(generated_text)
